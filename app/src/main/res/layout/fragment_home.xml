@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:layout_marginVertical="@dimen/_5dp"
+                app:cardCornerRadius="@dimen/_7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="@dimen/_5dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardWhatsappCleaner"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginStart="@dimen/_5dp"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginEnd="@dimen/_5dp"
+                                android:layout_marginBottom="@dimen/_5dp"
+                                android:backgroundTint="@color/card3"
+                                android:elevation="5dp"
+                                android:foreground="@drawable/ripple_7dp"
+                                app:cardCornerRadius="7dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center"
+                                    android:text="What\'s Images"
+                                    android:textColor="@color/cardText2"
+                                    android:textStyle="bold" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            android:src="@drawable/photo"/>
+
+                        <!--<com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/whatsapp_photos" />-->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardWhatsappStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginStart="@dimen/_5dp"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginEnd="@dimen/_5dp"
+                                android:layout_marginBottom="@dimen/_5dp"
+                                android:backgroundTint="@color/card2"
+                                android:elevation="5dp"
+                                android:foreground="@drawable/ripple_7dp"
+                                app:cardCornerRadius="7dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center"
+                                    android:text="What\'s Videos"
+                                    android:textColor="@color/cardText3"
+                                    android:textStyle="bold" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            android:src="@drawable/slideshow"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"/>
+
+                        <!--  <com.airbnb.lottie.LottieAnimationView
+                              android:layout_width="100dp"
+                              android:layout_height="100dp"
+                              android:layout_alignParentTop="true"
+                              android:layout_centerHorizontal="true"
+                              app:lottie_autoPlay="true"
+                              app:lottie_loop="true"
+                              app:lottie_rawRes="@raw/whatsapp_videos" />-->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardWhatsappSaved"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginStart="@dimen/_5dp"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginEnd="@dimen/_5dp"
+                                android:layout_marginBottom="@dimen/_5dp"
+                                android:backgroundTint="#FAE0FF"
+                                android:elevation="5dp"
+                                android:foreground="@drawable/ripple_7dp"
+                                android:padding="@dimen/_5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center"
+                                    android:text="Saved \nStatus"
+                                    android:textColor="#9C27B0"
+                                    android:textStyle="bold" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/saved_status" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearchProfile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:layout_marginVertical="@dimen/_5dp"
+                android:backgroundTint="@color/card4"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:foreground="@drawable/ripple_7dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/search_profile" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Search Profile"
+                            android:textColor="@color/cardText4"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="find easily any whatsapp profile through mobile number"
+                            android:textColor="@color/cardText4_light"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWhatsappWeb"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginVertical="@dimen/margin_5"
+                android:layout_weight="1"
+                android:backgroundTint="@color/card1"
+                android:elevation="5dp"
+                android:visibility="gone"
+                android:foreground="@drawable/ripple_7dp"
+                app:cardCornerRadius="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/web_lottie"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="Whatsapp Web"
+                            android:textColor="@color/cardText1"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:paddingStart="@dimen/_10dp"
+                            android:text="WhatsApp Web is an online platform for using your WhatsApp account on your computer"
+                            android:textColor="@color/cardText1"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/web_lottie"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentRight="true"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/whatsapp_web" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/flAdplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@drawable/ic_native_bg_2"
+                android:padding="@dimen/margin_5"
+                android:visibility="gone" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:layout_marginVertical="@dimen/_5dp"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vpPosters"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                        android:id="@+id/arc_pi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        app:dotsColor="@color/white"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="8dp"
+                        app:dotsSpacing="4dp"
+                        app:dotsWidthFactor="2.5"
+                        app:selectedDotColor="@color/green"
+                        app:progressMode="true"
+                        />
+                    <!--<it.beppi.arcpageindicator.ArcPageIndicator
+                        android:id="@+id/arc_pi"
+                        android:layout_width="@dimen/margin_200"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:apiAnimationType="cover"
+                        app:apiArcOrientation="toUp"
+                        app:apiSelectedSpotColor="@color/cardText2"
+                        app:apiSpotShape="circle"
+                        app:apiSpotsColor="@color/card2"
+                        app:apiSpotsRadius="@dimen/_5dp"
+                        app:apiViewPager="@id/vpPosters" />-->
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRepeater"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:layout_marginVertical="@dimen/_5dp"
+                android:backgroundTint="@color/card3"
+                android:elevation="5dp"
+                android:foreground="@drawable/ripple_7dp"
+                app:cardCornerRadius="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:padding="@dimen/_10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/text_repeater" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Text Repeater"
+                            android:textColor="@color/cardText3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Repeat text multiple times"
+                            android:textColor="@color/cardText3_light"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardWhatsAppGalary"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:backgroundTint="@color/app_color"
+                        android:elevation="3dp"
+                        app:cardCornerRadius="7dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="WhatsApp Gallary"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                &lt;!&ndash;<com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/whatsapp_status" />&ndash;&gt;
+            </RelativeLayout>-->
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWhatsAppBooster"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginVertical="@dimen/margin_5"
+                android:layout_weight="1"
+                android:backgroundTint="@color/card2"
+                android:elevation="5dp"
+                android:foreground="@drawable/ripple_7dp"
+                app:cardCornerRadius="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/booster_lottie"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="What's Booster"
+                            android:textColor="@color/cardText2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text="Get rid of junk files and cache data to boost performance and battery life."
+                            android:textColor="@color/cardText2_light"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/booster_lottie"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentRight="true"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/water_wave" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/flAdplaceholder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_10"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@drawable/ic_native_bg_2"
+                android:padding="@dimen/margin_5"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_5"
+                android:layout_marginVertical="@dimen/margin_5"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardQrCodeReader"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/card4"
+                        android:elevation="5dp"
+                        android:foreground="@drawable/ripple_7dp"
+                        app:cardCornerRadius="7dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_above="@id/tvQrReader"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/qr_reader" />
+
+                            <TextView
+                                android:id="@+id/tvQrReader"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="QR Reader"
+                                android:textColor="@color/cardText4"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardQrGenerator"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/card1"
+                        android:foreground="@drawable/ripple_7dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="7dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_above="@id/tvQrGenerator"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/qr_generator" />
+
+                            <TextView
+                                android:id="@+id/tvQrGenerator"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="QR Generator"
+                                android:textColor="@color/cardText1"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--            </androidx.cardview.widget.CardView>-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryColor">
+
+    <RelativeLayout
+        android:id="@+id/RLTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/RLTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imBack"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:onClick="backReply"
+                android:paddingVertical="@dimen/_16dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/TVTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/reply"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flAdplaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_5"
+        android:layout_marginVertical="@dimen/_5dp"
+        android:background="@drawable/ic_native_bg_3"
+        android:padding="@dimen/margin_5"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/replyRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addFloatingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:background="@drawable/toolbarbackground"
+            android:src="@drawable/ic_add"
+            android:tint="@color/white"
+            app:rippleColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adViewBanner"
+        style="@style/BannerAdsView"/>
+</LinearLayout>

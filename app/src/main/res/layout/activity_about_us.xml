@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_us">
+
+    <RelativeLayout
+        android:id="@+id/RLTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/RLTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imBack"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:onClick="backAboutUs"
+                android:paddingVertical="@dimen/_16dp"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/TVTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/about_us"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/about_us"
+            android:layout_below="@id/RLTopLayout"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_marginHorizontal="@dimen/_20dp"
+            android:gravity="center"
+            android:text="@string/text_about_us"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/margin_70"
+            android:layout_height="@dimen/margin_70"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            style="@style/nText_16SP"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvAppVersion"
+            style="@style/nText_12SP"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:text="@string/app_version" />
+    </LinearLayout>
+
+</RelativeLayout>

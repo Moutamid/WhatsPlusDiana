@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">What\'s Plus</string>
+    <string name="fb_ad_inters">632811888289430_633842138186405</string>
+    <string name="fb_ad_banner">632811888289430_633842798186339</string>
+    <string name="app_id">632811888289430</string>
+    //IMG_16_9_APP_INSTALL#
+    //Status
+    <string name="share_app_message">Download All Videos using this app. Download Now</string>
+    <string name="share">Share</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="text_enter_number">Enter Number</string>
+    <string name="text_enter_profile_mobile_number">Enter Profile Mobile Number</string>
+    <string name="text_search_profile">Search Profile</string>
+    <string name="text_enter_message">Enter Message</string>
+    <string name="text_enter_repetition_limit">Enter Repet Number</string>
+    <string name="text_copy">Copy</string>
+    <string name="text_clear">Clear</string>
+    <string name="text_share">Share</string>
+    <string name="text_repeat">Repeat</string>
+    <string name="text_text_repeater">Text Repeater</string>
+    <string name="text_new_line_on">New Line On</string>
+    <string name="text_limit_note">Note : Number of Repeater Text Limit 999</string>
+    <string name="text_whatsapp_web">WhatsApp Web</string>
+    <string name="text_qrGenerator">QR Generator</string>
+    <string name="text_qrCodeType">QR Code Type</string>
+    <string name="enterText">Enter Text</string>
+    <string name="generate">Generate</string>
+    <string name="refresh">Refresh</string>
+    <string name="contents_text">title</string>
+    <string name="contents_email">email.com</string>
+    <string name="contents_phone">phone</string>
+    <string name="contents_sms">sms</string>
+    <string name="contents_contact">contact</string>
+    <string name="contents_location">location</string>
+    <string name="qrReader">QR Reader</string>
+    <string name="qrCodeResult">QR Code Result</string>
+    <string name="search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="share_subject">share</string>
+    <string name="share_using">Share Using</string>
+    <string name="ascii_face">Ascii Fase</string>
+    <string name="text_enter_text">Enter Text</string>
+    <string name="text_enter_emoji">Enter Emoji</string>
+    <string name="text_transform">Transform</string>
+    <string name="text_ascii_font">Ascii Font</string>
+    <string name="reply">Reply</string>
+    <string name="whatsapp_info">Whatsapp Info</string>
+    <string name="whatsapp_current_version">Whatsapp Current Version</string>
+    <string name="txt_please_enter_your_message_and_counter">Please enter your message and counter.</string>
+    <string name="txt_please_enter_your_message">Please enter your message.</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_save">Save</string>
+    <string name="text_card_caption">Card Caption</string>
+    <string name="text_back">Back</string>
+    <string name="text_next">Next</string>
+    <string name="text_stickers">Stickers</string>
+    <string name="text_advance_tools">Other Tools</string>
+    <string name="text_extras">Extras</string>
+    <string name="about_us">About Us</string>
+    <string name="app_version">Version 1.1</string>
+    <string name="text_about_us">We are pleased to see you relish the application. We will keep updating and improving user experience into the Tranding Tools app.\n\nIf you have any query or suggestion please write us at : trandingtool@gmail.com.\n\nThanks you</string>
+    <string name="text_booster">Booster</string>
+    <string name="rating_dialog_experience">How was your experience with us?</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_suggestions">Suggest us what went wrong and we\'ll work on it!</string>
+    <string name="text_please_wait">Please wait..</string>
+    <string name="text_download">Download</string>
+    <string name="text_app_move_message">We have moved our application. To get the latest update and new feature, please download our new version.</string>
+    <string name="text_start_clean">Start Clean</string>
+    <string name="text_rate_us">Rate Us</string>
+    <string name="text_policy">Policy</string>
+    <string name="text_privacy_policy">Privacy Policy</string>
+
+
+</resources>

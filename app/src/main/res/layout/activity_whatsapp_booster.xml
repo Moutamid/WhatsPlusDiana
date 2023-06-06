@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="5dp"
+        android:background="@color/primaryColor"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/regular"
+            android:text="@string/text_booster"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:paddingVertical="@dimen/margin_16"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flAdplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginVertical="@dimen/margin_5"
+            android:background="@drawable/ic_native_bg_1"
+            android:padding="@dimen/margin_5"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/llScanIntro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primaryColor"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivCircle"
+                    android:layout_width="@dimen/margin_200"
+                    android:layout_height="@dimen/margin_200"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/numbers_oval_background"
+                    android:backgroundTint="@color/card1"
+                    android:elevation="@dimen/margin_5"
+                    android:foreground="@drawable/ripple_on_click_oval" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/Text_24SP"
+                android:layout_centerInParent="true"
+                android:text="@string/text_start_clean"
+                android:textColor="@color/cardText1"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/booster_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/booster_3" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/booster_success_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/success_booster" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/adViewBanner"
+        style="@style/BannerAdsView" />
+
+</RelativeLayout>

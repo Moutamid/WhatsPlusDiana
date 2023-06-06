@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adViewBanner"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primaryColor"
+            android:elevation="@dimen/_5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/regular"
+                android:text="@string/text_search_profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_18"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:paddingVertical="@dimen/_16dp"
+                android:onClick="backclickProfile"
+                android:src="@drawable/back" />
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flAdplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginVertical="@dimen/margin_20"
+            android:background="@drawable/ic_native_bg_4"
+            android:padding="@dimen/margin_5"
+            android:visibility="gone" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/text_enter_number"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/edit_text_border_4"
+                    android:hint="@string/text_enter_profile_mobile_number"
+                    android:inputType="number"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="5dp" />
+
+                <Button
+                    android:id="@+id/btnSearchProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/cardText4"
+                    android:paddingHorizontal="15dp"
+                    android:text="@string/text_search_profile"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/adViewBanner"
+        style="@style/BannerAdsView"/>
+</RelativeLayout>

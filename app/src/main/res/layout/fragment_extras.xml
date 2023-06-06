@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="@dimen/_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/text_extras"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAboutUs"
+                    style="@style/textExtras"
+                    android:background="@drawable/edit_text_border_1"
+                    android:text="About Us"/>
+
+                <TextView
+                    android:id="@+id/tvContactUs"
+                    style="@style/textExtras"
+                    android:background="@drawable/edit_text_border_2"
+                    android:text="Contact Us" />
+
+                <TextView
+                    android:id="@+id/ShareNow"
+                    style="@style/textExtras"
+                    android:background="@drawable/edit_text_border_3"
+                    android:text="Share Now" />
+
+                <TextView
+                    android:id="@+id/tvRateUs"
+                    style="@style/textExtras"
+                    android:background="@drawable/edit_text_border_4"
+                    android:text="Rate Us" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flAdplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:layout_marginVertical="@dimen/margin_20"
+                android:background="@drawable/ic_native_bg_2"
+                android:padding="@dimen/margin_5"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

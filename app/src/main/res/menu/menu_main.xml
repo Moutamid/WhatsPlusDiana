@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/actionAdvanceTool"
+        android:title="Other Tools"
+        android:icon="@drawable/ic_tools"/>
+    <item
+        android:id="@+id/actionExtras"
+        android:title="Extras"
+        android:visible="false"
+        android:icon="@drawable/ic_menu_bar"/>
+</menu>

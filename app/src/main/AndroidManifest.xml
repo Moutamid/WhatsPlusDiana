@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.moutamid.rurovision">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.instagram.android" />
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
+
+    <application
+        android:name="com.moutamid.rurovision.activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        tools:ignore="Instantiatable">
+        <activity
+            android:name="com.moutamid.rurovision.activity.ActSaveMedia"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.whatsapp_video.WhatsappVideosActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.whatsapp_photos.WhatsappPhotosActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.ActivityAppPolicy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.ActivityThankYou"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.ActivityRelocation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.WhatsappBoosterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.AboutUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.sticker.StickerListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.sticker.StickerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.shayri.ShayriActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.card_caption.CardCaptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.InfoWhatsApp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.reply.ReplyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.FontToEmojiActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.ascii_face.SubAsciiFaceTextActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.ascii_face.AsciiFaceTextActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.qr_code_reader.QRcodeReaderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.qr_code_maker.QRcodeMakerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.WhatsAppWebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.TextRepeaterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.SearchProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.StartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.moutamid.rurovision.activity.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.moutamid.rurovision.activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true" />
+    </application>
+
+</manifest>
