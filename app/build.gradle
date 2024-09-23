@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "com.moutamid.rurovision"
@@ -13,7 +13,7 @@ android {
         manifestPlaceholders = [appPackageName: "${applicationId}"]
         setProperty("archivesBaseName", "WhatsPlus-$versionName")
         multiDexEnabled true
-        resConfigs "en", "fr"
+        resConfigs 'en', 'fr'
     }
 
     buildTypes {
@@ -36,15 +36,13 @@ android {
         jumboMode true
         javaMaxHeapSize "4g"
     }
-
     packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/DEPENDENCIES'
-        pickFirst 'AndroidManifest.xml'
+        resources {
+            excludes += ['META-INF/LICENSE.txt', 'META-INF/LICENSE', 'META-INF/NOTICE.txt', 'META-INF/NOTICE', 'META-INF/DEPENDENCIES']
+            pickFirsts += ['AndroidManifest.xml']
+        }
     }
+
     buildFeatures {
         viewBinding true
     }
@@ -52,6 +50,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.moutamid.rurovision'
 
 }
 
@@ -71,7 +70,7 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
     testImplementation 'junit:junit:4.13.2'
-    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.github.Kaopiz:KProgressHUD:1.0'
     implementation 'com.google.code.gson:gson:2.8.6'
 
     //for lottie
@@ -82,19 +81,19 @@ dependencies {
     implementation 'com.tbuonomo:dotsindicator:4.2'
 
     implementation 'com.karumi:dexter:6.2.2'
-    implementation 'io.github.kobakei:ratethisapp:1.2.0'
+    implementation 'com.github.kobakei:Android-RateThisApp:1.2.0'
 
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
-    implementation 'uk.co.markormesher:android-fab:2.5.0'
+    implementation 'com.github.markormesher:android-fab:v2.5.0'
 
-    implementation "com.leinardi.android:speed-dial:3.1.1"
+    implementation "com.github.leinardi:FloatingActionButtonSpeedDial:2.0.1"
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
-    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.google.zxing:core:3.4.1'
     implementation group: 'org.bouncycastle', name: 'bcprov-jdk15to18', version: '1.64'
 
     // lifecycle_version
@@ -107,7 +106,7 @@ dependencies {
     annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.4.1'
     implementation 'com.google.android.play:core:1.8.0'
 //    ads
-    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+    implementation 'com.google.android.gms:play-services-ads:23.3.0'
 
     implementation 'com.google.ads.mediation:facebook:6.8.0.0'
     implementation 'com.facebook.android:audience-network-sdk:6.12.0'
